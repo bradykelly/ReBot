@@ -9,6 +9,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+		<PackageReference Include="Remora.Discord" Version="2022.8.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\ReBot.Core\ReBot.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="ServiceConfiguration.cs" />
 	</ItemGroup>
 </Project>
